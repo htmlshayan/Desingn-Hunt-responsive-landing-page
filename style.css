@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: white;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg,#3640E3,#4d52ec98);
+    
+}
+
+nav{
+    width: 90%;
+    height: 10vh;
+    /* background-color: red; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2{
+    font-size: 2vw;
+}
+
+ul{
+    display: flex;
+    gap: 3vw;
+    list-style: none;
+    align-items: center;
+}
+
+li{
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    font-size: 1.4vw;
+}
+
+i{
+    font-size: 1.4vw;
+    display: none;
+}
+
+li:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.content{
+    width: 90%;
+    height:90vh;
+    /* background-color: yellow; */
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-content{
+    width: 45%;
+    height: 100%;
+    /* background-color:green ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5vw;
+    
+}
+
+.main-text h1{
+    font-size: 4vw;
+    line-height: 4vw;
+}
+
+.left-content p{
+    font-size: 1.2vw;
+}
+
+.buttons{
+    display: flex;
+    gap: 2vw;
+}
+.buttons button{
+    padding: 1vw 2vw;
+    background-color: white;
+    color: #3640E3;
+    border-radius: 50px;
+    border: transparent;
+    font-size: 1vw;
+}
+
+#video-btn{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.438);
+}
+
+.right-content{
+    width:55% ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000000; */
+}
+
+.right-content img{
+    width: 40vw;
+}
+
+
+@media (max-width:450px) {
+    i{
+        display:block;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .logo h2{
+        font-size: 5vw;
+    }
+
+    i{
+        font-size: 4vw;
+    }
+
+    li{
+        opacity: 0;
+    }
+    .left-content{
+        width: 100%;
+        gap: 4vw;
+        /* background-color: red; */
+    }
+    .main-text h1 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .left-content p{
+        font-size: 3.2vw;
+
+    }
+
+    .buttons button{
+        font-size: 3vw;
+        padding: 2vw 3vw;
+    }
+
+    .right-content{
+        width: 100%;
+    }
+
+    .right-content img{
+        width: 60vw;
+    }
+}
